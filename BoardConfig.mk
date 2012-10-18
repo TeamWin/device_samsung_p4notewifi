@@ -1,7 +1,7 @@
 USE_CAMERA_STUB := true
 
 # inherit from the proprietary version
--include vendor/samsung/p4noterf/BoardConfigVendor.mk
+-include vendor/samsung/p4notewifi/BoardConfigVendor.mk
 
 TARGET_NO_BOOTLOADER := true
 TARGET_BOOTLOADER_BOARD_NAME := smdk4x12
@@ -44,7 +44,7 @@ BOARD_SYSTEMIMAGE_PARTITION_SIZE := 0x105c0000
 BOARD_USERDATAIMAGE_PARTITION_SIZE := 0x105c0000
 BOARD_FLASH_BLOCK_SIZE := 131072
 
-TARGET_PREBUILT_KERNEL := device/samsung/p4noterf/kernAl
+TARGET_PREBUILT_KERNEL := device/samsung/p4notewifi/kernAl
 
 # Recovery:Start
 
@@ -53,7 +53,7 @@ BOARD_HAS_LARGE_FILESYSTEM := true
 
 # Recovery: set depending on recovery being built for. (CWM or TWRP)
 #           both init scripts can be found in the recovery folder
-TARGET_RECOVERY_INITRC := device/samsung/p4noterf/recovery/init.rc
+TARGET_RECOVERY_INITRC := device/samsung/p4notewifi/recovery/init.rc
 
 # TWRP specific build flags
 DEVICE_RESOLUTION := 1280x800
